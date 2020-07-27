@@ -6,14 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Creative - Start Bootstrap Theme</title>
-        <style>
-      #map {
-        width: 100%;
-        margin-top: 10vh;
-        height: 400px;
-        background-color: grey;
-      }
-    </style>
+        
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -236,28 +229,11 @@
                 </div>
                 
             </div>
-            <div id="map"></div>
         </section>
         <!-- Footer-->
         <footer class="bg-light py-5">
             <div class="container"><div class="small text-center text-muted">Copyright © 2020 - Start Bootstrap</div></div>
         </footer>
-        <script>
-// Initialize and add the map
-function initMap() {
-  // The location of Uluru
-  //var uluru = {lat: 46.387080, lng: 15.286690};
-  var uluru = {lat: -25.344, lng: 131.036};
-  // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: uluru});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map});
-}
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzLnht29wdmH13urJe7PfWTaPyHXsx8AY">
-    </script>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
