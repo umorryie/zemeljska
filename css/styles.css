@@ -10645,7 +10645,15 @@ header.masthead h1 {
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
 }
-
+@media only screen and (max-width: 600px) {
+  #portfolio .container-fluid .portfolio-box .portfolio-box-caption,
+  #portfolio .container-sm .portfolio-box.portfolio-box-caption,
+  #portfolio .container-md .portfolio-box .portfolio-box-caption,
+  #portfolio .container-lg .portfolio-box .portfolio-box-caption,
+  #portfolio .container-xl .portfolio-box .portfolio-box-caption {
+    opacity: 0.6;
+  }
+}
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption,
 #portfolio .container-sm .portfolio-box.portfolio-box-caption,
 #portfolio .container-md .portfolio-box .portfolio-box-caption,
