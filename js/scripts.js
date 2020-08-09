@@ -89,7 +89,8 @@ const jame4 = [
   },
   {
     src: "assets/img/zemeljska/20190413_173416.jpg",
-  },]
+  },
+];
 var skarpe = [
   {
     src: "assets/img/zemeljska/skarpa.jpg",
@@ -181,11 +182,9 @@ firstPortFChild.forEach((el) =>
       items = cistilna;
     } else if (id == "prevozi") {
       items = prevozi;
-    }} else if (id == "jame4") {
+    } else if (id == "jame4") {
       items = jame4;
-    } 
-    
-    else if (id == "vlaka") {
+    } else if (id == "vlaka") {
       items = vlaka;
     } else if (id == "kanalizacija") {
       items = kanalizacija;
