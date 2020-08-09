@@ -82,13 +82,14 @@ var jame = [
   {
     src: "assets/img/zemeljska/20200515_112422.jpg",
   },
+];
+const jame4 = [
   {
     src: "assets/img/zemeljska/20190330_131053.jpg",
   },
   {
     src: "assets/img/zemeljska/20190413_173416.jpg",
-  },
-];
+  },]
 var skarpe = [
   {
     src: "assets/img/zemeljska/skarpa.jpg",
@@ -180,7 +181,11 @@ firstPortFChild.forEach((el) =>
       items = cistilna;
     } else if (id == "prevozi") {
       items = prevozi;
-    } else if (id == "vlaka") {
+    }} else if (id == "jame4") {
+      items = jame4;
+    } 
+    
+    else if (id == "vlaka") {
       items = vlaka;
     } else if (id == "kanalizacija") {
       items = kanalizacija;
