@@ -1,27 +1,12 @@
-var skarpa = [
+var silos = [
   {
-    src: "assets/img/zemeljska/skarpa.jpg",
-  },
-  {
-    src: "assets/img/zemeljska/20191207_084500.jpg",
-  },
-  {
-    src: "assets/img/zemeljska/20191210_092335.jpg",
-  },
-  {
-    src: "assets/img/zemeljska/20200314_093523.jpg",
-  },
-  {
-    src: "assets/img/zemeljska/20200314_095017.jpg",
+    src: "assets/img/zemeljska/20200522_164201.jpg",
   },
   {
     src: "assets/img/zemeljska/20200423_093652.jpg",
   },
   {
-    src: "assets/img/zemeljska/20200425_121119.jpg",
-  },
-  {
-    src: "assets/img/zemeljska/20200522_164201.jpg",
+    src: "assets/img/zemeljska/sillos.jpg",
   },
 ];
 var okolica = [
@@ -78,12 +63,7 @@ var jame = [
   {
     src: "assets/img/zemeljska/jama.jpg",
   },
-  {
-    src: "assets/img/zemeljska/20190330_131053.jpg",
-  },
-  {
-    src: "assets/img/zemeljska/20190413_173416.jpg",
-  },
+
   {
     src: "assets/img/zemeljska/20190620_090807.jpg",
   },
@@ -102,6 +82,26 @@ var jame = [
   {
     src: "assets/img/zemeljska/20200515_112422.jpg",
   },
+  {
+    src: "assets/img/zemeljska/20190330_131053.jpg",
+  },
+  {
+    src: "assets/img/zemeljska/20190413_173416.jpg",
+  },
+];
+var skarpe = [
+  {
+    src: "assets/img/zemeljska/skarpa.jpg",
+  },
+  {
+    src: "assets/img/zemeljska/20191207_084500.jpg",
+  },
+  {
+    src: "assets/img/zemeljska/20191210_092335.jpg",
+  },
+  {
+    src: "assets/img/zemeljska/20200314_093523.jpg",
+  },
 ];
 var podboj = [
   {
@@ -109,6 +109,12 @@ var podboj = [
   },
   {
     src: "assets/img/zemeljska/20200415_154949.jpg",
+  },
+  {
+    src: "assets/img/zemeljska/prebojj.jpg",
+  },
+  {
+    src: "assets/img/zemeljska/prebojjj.jpg",
   },
 ];
 var hiab = [
@@ -164,8 +170,10 @@ firstPortFChild.forEach((el) =>
       items = jame;
     } else if (id == "izkop") {
       items = izkop;
+    } else if (id == "silos") {
+      items = silos;
     } else if (id == "skarpa") {
-      items = skarpa;
+      items = skarpe;
     } else if (id == "okolica") {
       items = okolica;
     } else if (id == "cistilna") {
@@ -255,3 +263,8 @@ firstPortFChild.forEach((el) =>
 
   // Magnific popup calls
 })(jQuery); // End of use strict
+$(document).on("keydown", function (event) {
+  if (event.keyCode === 8) {
+    event.preventDefault();
+  }
+});
